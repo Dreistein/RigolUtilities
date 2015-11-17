@@ -1,4 +1,4 @@
-package dreistein.io.rigol.com;
+package io.dreistein.rigol.comm;
 
 import org.apache.commons.net.telnet.TelnetClient;
 
@@ -82,7 +82,7 @@ public class Scope {
         }
     }
 
-//com methods
+//comm methods
 
     public void send(String command) {
         out.print(command);

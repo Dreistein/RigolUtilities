@@ -1,7 +1,8 @@
-package dreistein.io.rigol.terminal;
+package io.dreistein.rigol.terminal;
 
-import dreistein.io.rigol.com.Scope;
-import dreistein.io.rigol.com.UnsupportedDeviceException;
+import io.dreistein.rigol.comm.Scope;
+import io.dreistein.rigol.comm.UnsupportedDeviceException;
+import io.dreistein.rigol.util.Chalk;
 
 import java.io.IOException;
 import java.net.Inet4Address;
@@ -59,7 +60,7 @@ public class Info {
                 .getLocation()
                 .getPath())
                 .getName();
-        System.out.println("Description:\n\tPrints usable info about" +
+        System.out.println(new Chalk("Description:").green().underscore()+"\n\tPrints usable info about" +
                 " Rigol DS1000Z and MSO1000Z series Oscilloscopes on screen");
         System.out.println("Usage:\n\tjava -jar "+executableName+" <IP>\n\tParameter:\tIP: Current IP Address of the scope.\n");
     }

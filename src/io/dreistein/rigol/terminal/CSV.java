@@ -1,7 +1,7 @@
-package dreistein.io.rigol.terminal;
+package io.dreistein.rigol.terminal;
 
-import dreistein.io.rigol.com.Scope;
-import dreistein.io.rigol.com.UnsupportedDeviceException;
+import io.dreistein.rigol.comm.Scope;
+import io.dreistein.rigol.comm.UnsupportedDeviceException;
 
 import java.io.*;
 import java.net.Inet4Address;

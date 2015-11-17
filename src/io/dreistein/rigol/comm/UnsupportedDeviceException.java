@@ -1,4 +1,4 @@
-package dreistein.io.rigol.com;
+package io.dreistein.rigol.comm;
 
 /**
  * Created by Dreistein
